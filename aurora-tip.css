@@ -1,3 +1,12 @@
+
+/**
+ * Tip.
+ *
+ * .tip.tip-[direction]
+ *   .tip-inner
+ *   .tip-arrow
+ */
+
 .tip {
   font-size: 11px;
 }
@@ -23,26 +32,14 @@
   border: 5px dashed rgba(0,0,0,.75);
 }
 
-.tip-arrow-north { border-bottom-color: rgba(0,0,0,.75) }
-.tip-arrow-south { border-top-color: rgba(0,0,0,.75) }
-.tip-arrow-east { border-left-color: rgba(0,0,0,.75) }
-.tip-arrow-west { border-right-color: rgba(0,0,0,.75) }
+.tip-arrow-above { border-top-color: rgba(0,0,0,.75) }
+.tip-arrow-below { border-bottom-color: rgba(0,0,0,.75) }
+.tip-arrow-left { border-left-color: rgba(0,0,0,.75) }
+.tip-arrow-right { border-right-color: rgba(0,0,0,.75) }
 
-.tip-north .tip-arrow,
-.tip-north-east .tip-arrow,
-.tip-north-west .tip-arrow {
-  top: 0px;
-  left: 50%;
-  margin-left: -5px;
-  border-bottom-style: solid;
-  border-top: none;
-  border-left-color: transparent;
-  border-right-color: transparent
-}
-
-.tip-south .tip-arrow,
-.tip-south-east .tip-arrow,
-.tip-south-west .tip-arrow {
+.tip-above .tip-arrow,
+.tip-above-left .tip-arrow,
+.tip-above-right .tip-arrow {
   bottom: 0;
   left: 50%;
   margin-left: -5px;
@@ -52,7 +49,19 @@
   border-right-color: transparent
 }
 
-.tip-east .tip-arrow {
+.tip-below .tip-arrow,
+.tip-below-left .tip-arrow,
+.tip-below-right .tip-arrow {
+  top: 0px;
+  left: 50%;
+  margin-left: -5px;
+  border-bottom-style: solid;
+  border-top: none;
+  border-left-color: transparent;
+  border-right-color: transparent
+}
+
+.tip-left .tip-arrow {
   right: 0;
   top: 50%;
   margin-top: -5px;
@@ -62,7 +71,7 @@
   border-bottom-color: transparent
 }
 
-.tip-west .tip-arrow {
+.tip-right .tip-arrow {
   left: 0;
   top: 50%;
   margin-top: -5px;
@@ -72,12 +81,13 @@
   border-bottom-color: transparent
 }
 
-.tip-north-west .tip-arrow,
-.tip-south-west .tip-arrow {
-  left: 15px;
+.tip-above-left .tip-arrow,
+.tip-below-left .tip-arrow {
+  left: 85%;
 }
 
-.tip-north-east .tip-arrow,
-.tip-south-east .tip-arrow {
-  left: 85%;
+
+.tip-above-right .tip-arrow,
+.tip-below-right .tip-arrow {
+  left: 15px;
 }

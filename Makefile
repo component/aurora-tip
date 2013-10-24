@@ -2,7 +2,7 @@
 build: components aurora-tip.css
 	@component build --dev
 
-components:
+components: component.json
 	@component install --dev
 
 clean:
