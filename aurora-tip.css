@@ -32,14 +32,14 @@
   border: 5px dashed rgba(0,0,0,.75);
 }
 
-.tip-arrow-above { border-top-color: rgba(0,0,0,.75) }
-.tip-arrow-below { border-bottom-color: rgba(0,0,0,.75) }
+.tip-arrow-top { border-top-color: rgba(0,0,0,.75) }
+.tip-arrow-bottom { border-bottom-color: rgba(0,0,0,.75) }
 .tip-arrow-left { border-left-color: rgba(0,0,0,.75) }
 .tip-arrow-right { border-right-color: rgba(0,0,0,.75) }
 
-.tip-above .tip-arrow,
-.tip-above-left .tip-arrow,
-.tip-above-right .tip-arrow {
+.tip-top .tip-arrow,
+.tip-top-left .tip-arrow,
+.tip-top-right .tip-arrow {
   bottom: 0;
   left: 50%;
   margin-left: -5px;
@@ -49,9 +49,9 @@
   border-right-color: transparent
 }
 
-.tip-below .tip-arrow,
-.tip-below-left .tip-arrow,
-.tip-below-right .tip-arrow {
+.tip-bottom .tip-arrow,
+.tip-bottom-left .tip-arrow,
+.tip-bottom-right .tip-arrow {
   top: 0px;
   left: 50%;
   margin-left: -5px;
@@ -81,13 +81,13 @@
   border-bottom-color: transparent
 }
 
-.tip-above-left .tip-arrow,
-.tip-below-left .tip-arrow {
+.tip-top-left .tip-arrow,
+.tip-bottom-left .tip-arrow {
   left: 85%;
 }
 
 
-.tip-above-right .tip-arrow,
-.tip-below-right .tip-arrow {
+.tip-top-right .tip-arrow,
+.tip-bottom-right .tip-arrow {
   left: 15px;
 }
