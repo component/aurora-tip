@@ -2,7 +2,7 @@
   "name": "aurora-tip",
   "repo": "component/aurora-tip",
   "description": "Aurora theme for tool tips",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "keywords": ["aurora", "theme", "tip", "tooltip", "tooltips"],
   "dependencies": {},
   "development": {},
